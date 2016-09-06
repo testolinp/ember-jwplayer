@@ -9,6 +9,7 @@ export default Ember.Component.extend({
   _initializeJwplayer: Ember.on('didInsertElement', function() {
     var _this = this;
 
+    jwplayer.key = this.get('key');
     return this.$().jwplayer().setup({
       file: this.get('file')
     });
