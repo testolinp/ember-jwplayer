@@ -7,10 +7,10 @@ export default Ember.Component.extend({
   file: null,
 
   _initializeJwplayer: Ember.on('didInsertElement', function() {
-    var _this = this;
-
     jwplayer.key = this.get('key');
-    return this.$().jwplayer().setup({
+    console.log(jwplayer)
+
+    return jwplayer(this.$().get(0)).setup({
       file: this.get('file')
     });
   })
