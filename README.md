@@ -20,7 +20,7 @@ ember install:addon ember-jwplayer
 
 ### JWPlayer
 
-#### You need to add your API KEY on your `config/environment` file. 
+#### You need to add your API KEY on your `config/environment` file.
 
 ```javascript
 var ENV = {
@@ -44,12 +44,38 @@ var ENV = {
 #### JWPlayer events will be send from the component to your controller or route.
 
 ```hbs
-{{ember-jwplayer	
+{{ember-jwplayer
   play='onPlay'
   pause='onPause'
   complete='onComplete'
 }}
 ```
+
+## Customization
+This addon supports partial range of jwplayer configuration options.
+
+* accessibility
+* file
+* image
+* title
+* description
+* mediaid
+* mute
+* autostart
+* repeat
+* abouttext
+* aboutlink
+* controls
+* width
+* height
+* visualplaylist
+* displaytitle
+* displaydescription
+* stretching
+* hlshtml
+* primary
+* flashplayer
+* base
 
 
 ## Installation
