@@ -1,6 +1,26 @@
-# Ember-jwplayer
+# ember-jwplayer
 
-This README outlines the details of collaborating on this Ember addon.
+`ember-jwplayer` is a component that wraps the JWPlayer plugin.
+
+### Installation
+
+From inside your ember-cli project, run the following:
+
+```bash
+ember install ember-jwplayer
+```
+
+#### Installation for ember-cli 0.1.5 - 0.2.2
+
+```bash
+ember install:addon ember-jwplayer
+```
+
+### JWPlayer
+
+```hbs
+{{ember-jwplayer}}
+```
 
 ## Installation
 
@@ -10,12 +30,11 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Running
 
-* `ember serve`
+* `ember server`
 * Visit your app at http://localhost:4200.
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
@@ -23,4 +42,4 @@ This README outlines the details of collaborating on this Ember addon.
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
