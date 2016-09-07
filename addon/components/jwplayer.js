@@ -1,5 +1,8 @@
 import Ember from 'ember';
 import layout from '../templates/components/jwplayer';
+import config from 'ember-get-config';
+
+const { key } = config.jwplayer;
 
 export default Ember.Component.extend({
   layout: layout,
@@ -31,7 +34,7 @@ export default Ember.Component.extend({
   base: '/',
 
   _initializeJwplayer: Ember.on('didInsertElement', function() {
-    jwplayer.key = this.get('key');
+    jwplayer.key = key;
 
     return jwplayer(this.$().get(0)).setup({
       file: this.get('file'),
