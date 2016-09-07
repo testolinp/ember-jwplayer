@@ -1,6 +1,6 @@
 {
   "name": "ember-jwplayer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Ember wrapper for the JWPlayer",
   "directories": {
     "doc": "doc",
@@ -51,7 +51,6 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
     "ember-cli-htmlbars": "^1.0.3",
-    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-get-config": "0.1.7"
   },
   "ember-addon": {
