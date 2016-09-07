@@ -27,6 +27,17 @@ ember install:addon ember-jwplayer
 }}
 ```
 
+### JWPlayer events will be send from the component to your controller or route
+
+```hbs
+{{ember-jwplayer	
+  play='onPlay'
+  pause='onPause'
+  complete='onComplete'
+}}
+```
+
+
 ## Installation
 
 * `git clone` this repository
