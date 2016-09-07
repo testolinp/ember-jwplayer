@@ -2,6 +2,8 @@
 
 `ember-jwplayer` is a component that wraps the JWPlayer plugin.
 
+This is still a WIP. We're porting all of the events.
+
 ### Installation
 
 From inside your ember-cli project, run the following:
