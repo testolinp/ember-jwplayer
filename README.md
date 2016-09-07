@@ -18,7 +18,7 @@ ember install:addon ember-jwplayer
 
 ### JWPlayer
 
-### You need to add your API KEY on your `config/environment` file. 
+#### You need to add your API KEY on your `config/environment` file. 
 
 ```javascript
 var ENV = {
@@ -28,7 +28,7 @@ var ENV = {
 }
 ```
 
-### Now you can add the components on your templates.
+#### Now you can add the components on your templates.
 
 ```hbs
 {{ember-jwplayer
@@ -39,7 +39,7 @@ var ENV = {
 }}
 ```
 
-### JWPlayer events will be send from the component to your controller or route.
+#### JWPlayer events will be send from the component to your controller or route.
 
 ```hbs
 {{ember-jwplayer	
