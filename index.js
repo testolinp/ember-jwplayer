@@ -16,5 +16,11 @@ module.exports = {
       type: 'vendor',
       exports: { 'jwplayer': ['default'] }
     });
+    this.app.import('vendor/jwplayer-7.4.4/jw-icons.ttf', {
+      destDir: '/'
+    });
+    this.app.import('vendor/jwplayer-7.4.4/jw-icons.woff', {
+      destDir: '/'
+    });
   },
 };
