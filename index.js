@@ -10,7 +10,13 @@ module.exports = {
   },
 
   included(app) {
-    this._super.included(app);
+    while (app.app) {
+      app = app.app;
+    }
+
+    this.eachAddonInvoke('included', [app]);
+    this._super.included.apply(this, [app]);
+
     this.app.import('vendor/jwplayer-7.4.4/jwplayer.js');
     this.app.import('vendor/jwplayer-7.4.4/jwplayer.shim.js', {
       type: 'vendor',
