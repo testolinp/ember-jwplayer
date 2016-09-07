@@ -59,6 +59,21 @@ export default Ember.Component.extend({
       flashplayer: this.get('flashplayer'),
       base: this.get('base')
 
+    })
+    .on('setupError', message => {
+      this.sendAction('setupError', message);
+    })
+    .on('play', oldstate => {
+      this.sendAction('play', oldstate);
+    })
+    .on('pause', oldstate => {
+      this.sendAction('pause', oldstate);
+    })
+    .on('complete', () => {
+      this.sendAction('complete');
+    })
+    .on('buffer', buffer => {
+      this.sendAction('buffer', buffer);
     });
   })
 });
