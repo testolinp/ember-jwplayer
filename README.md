@@ -19,7 +19,12 @@ ember install:addon ember-jwplayer
 ### JWPlayer
 
 ```hbs
-{{ember-jwplayer}}
+{{ember-jwplayer
+  file=model.file
+  autostart=true
+  repeat=false
+  controls=true
+}}
 ```
 
 ## Installation
