@@ -1,7 +1,7 @@
 {
   "name": "ember-jwplayer",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "A Ember wrapper for the JWPlayer",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -42,6 +42,11 @@
   },
   "keywords": [
     "ember-addon",
+    "addon",
+    "plugin",
+    "video",
+    "audio",
+    "player",
     "jwplayer"
   ],
   "dependencies": {
