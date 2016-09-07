@@ -1,6 +1,6 @@
 {
   "name": "ember-jwplayer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Ember wrapper for the JWPlayer",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": "https://github.com/testolinp/ember-jwplayer",
   "engines": {
     "node": ">= 0.10.0"
   },
