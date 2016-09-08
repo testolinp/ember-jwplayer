@@ -60,7 +60,13 @@ export default Ember.Component.extend({
       hlshtml: this.get('hlshtml'),
       primary: this.get('primary'),
       flashplayer: this.get('flashplayer'),
-      base: this.get('base')
+      base: this.get('base'),
+
+      loadVideo: observer('file', function () {
+        const file = this.get('file');
+
+        jwplayer.load(file);
+      }
 
     })
     .on('setupError', message => {
