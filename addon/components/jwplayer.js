@@ -78,11 +78,5 @@ export default Ember.Component.extend({
     .on('buffer', buffer => {
       this.sendAction('buffer', buffer);
     });
-  }),
-
-  loadVideo: observer('file', function () {
-    const file = this.get('file');
-
-    jwplayer.load(file);
-  }
+  })
 });
