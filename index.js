@@ -28,5 +28,11 @@ module.exports = {
     this.app.import('vendor/jwplayer-7.4.4/jw-icons.woff', {
       destDir: '/'
     });
+    this.app.import('vendor/jwplayer-7.4.4/provider.caterpillar.js'. {
+      destDir: '/'
+    });
+    this.app.import('vendor/jwplayer-7.4.4/provider.youtube.js',
+      destDir: '/'
+    );
   },
 };
