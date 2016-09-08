@@ -6,6 +6,7 @@ const { key } = config.jwplayer;
 
 export default Ember.Component.extend({
   layout: layout,
+  key: null,
 
   file: null,
   image: null,
@@ -33,6 +34,8 @@ export default Ember.Component.extend({
   base: '/',
 
   _initializeJwplayer: Ember.on('didInsertElement', function() {
+    jwplayer.key = key;
+
     return jwplayer(this.$().get(0)).setup({
       file: this.get('file'),
       image: this.get('image'),
