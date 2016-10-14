@@ -66,6 +66,9 @@ export default Ember.Component.extend({
     .on('setupError', message => {
       this.sendAction('setupError', message);
     })
+    .on('error', message => {
+      this.sendAction('error', message);
+    })
     .on('play', oldstate => {
       this.sendAction('play', oldstate);
     })
@@ -77,6 +80,27 @@ export default Ember.Component.extend({
     })
     .on('buffer', buffer => {
       this.sendAction('buffer', buffer);
+    })
+    .on('bufferChange', buffer => {
+      this.sendAction('bufferChange', buffer);
+    })
+    .on('idle', oldstate => {
+      this.sendAction('idle', oldstate);
+    })
+    on('firstFrame', loadTime => {
+      this.sendAction('idle', loadTime);
+    })
+    .on('time', duration => {
+      this.sendAction('time', duration);
+    })
+    .on('mute', mute => {
+      this.sendAction('mute', mute);
+    })
+    .on('volume', volume => {
+      this.sendAction('volume', volume);
+    })
+    .on('fullscreen', fullscreen => {
+      this.sendAction('fullscreen', fullscreen);
     });
   })
 });

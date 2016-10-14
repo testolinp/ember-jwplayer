@@ -29,6 +29,7 @@ module.exports = {
       destDir: '/'
     });
     this.app.import('vendor/jwplayer-7.4.4/provider.caterpillar.js');
+
     this.app.import('vendor/jwplayer-7.4.4/provider.youtube.js');
   },
 };
