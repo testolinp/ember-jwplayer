@@ -33,6 +33,8 @@ export default Ember.Component.extend({
   flashplayer: '/',
   base: '/',
 
+  ga: {},
+
   _initializeJwplayer: Ember.on('didInsertElement', function() {
     jwplayer.key = key;
 
@@ -60,7 +62,9 @@ export default Ember.Component.extend({
       hlshtml: this.get('hlshtml'),
       primary: this.get('primary'),
       flashplayer: this.get('flashplayer'),
-      base: this.get('base')
+      base: this.get('base'),
+
+      ga: this.get('ga'),
 
     })
     .on('setupError', message => {
