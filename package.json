@@ -1,6 +1,6 @@
 {
   "name": "ember-jwplayer",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A Ember wrapper for the JWPlayer",
   "directories": {
     "doc": "doc",
